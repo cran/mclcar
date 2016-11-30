@@ -16,7 +16,7 @@
 }
 
 \usage{
-loglik.dCAR(pars, data)
+loglik.dCAR(pars, data, rho.cons = c(-0.249, 0.249))
 ploglik.dCAR(rho, data)
 
 get.beta.lm(rho, data)
@@ -36,6 +36,7 @@ mple.dCAR(data, tol = 1e-06, rho0=0)
   \item{data.vec}{a data frame of the response variable and covariates.}
 }
 }
+  \item{rho.cons}{rho domain interval} % FIXME
   \item{tol}{tolerance for the relative difference for two consequtive
 	iterations in finding the MPLE; default set to be = 1e-06}
 
@@ -55,7 +56,7 @@ eigen-values of the weight matrix.
 }
 
 \author{
-Zhe Sha \email{sha@stats.ox.ac.uk}
+Zhe Sha \email{zhesha1006@gmail.com}
 }
 
 \seealso{
